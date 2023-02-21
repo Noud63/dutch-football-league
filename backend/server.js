@@ -11,7 +11,6 @@ app.use(cors())
 app.use(express.json())
 dotenv.config()
 
-
 app.use('/footballData', footballDataRoute)
 
 // Place after routes
