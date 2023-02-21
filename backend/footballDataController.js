@@ -10,12 +10,14 @@ const getFootballData = asyncHandler(async (req, res) => {
    const response =  await axios.all([
         await axios.get(URL, {
             headers: {
-                "X-Auth-Token": process.env.REACT_APP_API_KEY
+                "X-Auth-Token": process.env.REACT_APP_API_KEY , 
+                "Access-Control-Allow-Origin": "*"
             }
         }),
         await axios.get(URL2, {
             headers: {
-                "X-Auth-Token": process.env.REACT_APP_API_KEY
+                "X-Auth-Token": process.env.REACT_APP_API_KEY,
+                "Access-Control-Allow-Origin": "*"
             }
         })
     ])
