@@ -1,5 +1,6 @@
-KNVB Eredivisie voetbal (Dutch Football league)<p>
-Build with React (hooks).<br>
+<h1>KNVB Eredivisie voetbal (Dutch Football league)</h1><p>
+Front-end: React (hooks).<br>
+Backt-end: Express Node MongoDB.<br>
 REST API https://api.football-data.org<br>
 
 ![eredivisie](https://user-images.githubusercontent.com/38325801/220104276-30ddea48-3fcf-4f2b-94de-0955b95e8f05.png)<br><br><br>
