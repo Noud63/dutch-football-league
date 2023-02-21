@@ -25,7 +25,6 @@ const AllData = ({ children }) => {
         
         dispatchState({ type: "DATA_REQUEST" })
 
-
         try {
             const response = await axios('/footballData')
 
