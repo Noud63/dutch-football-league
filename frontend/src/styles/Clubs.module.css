@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.iconBoxWrapper {
+    margin: 0 auto;
+    max-width:1155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-bottom: 8%;
+    padding: .6rem;
+}
+
+.clubsIconWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.alleClubs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: .6rem 0 .6rem 0;
+  color: white;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
+  background-color:rgb(36, 79, 143);
+  box-shadow: 0px 2px 8px rgb(0, 22, 54);
+  border-radius: .6rem;
+  border: 2px solid  rgb(196, 160, 0);
+  margin-bottom: 1.4rem;
+  padding-left: 1rem;
+}
+
+.iconPng {
+    width: 100px;
+    height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 34, 73));
+    filter: drop-shadow(5px 5px 5px rgb(0, 34, 73));
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.iconPng:hover {
+   transform:scale(1.2)
+}
+
+.iconBox {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(9, 1fr );
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.icon {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+}
+
+.clubName {
+    margin-top: 15px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9rem;
+}
+
+@media only screen and (max-width: 1200px ){
+    .iconBox {
+        grid-template-columns: repeat(6, 1fr );
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px ){
+    .iconBox {
+        grid-template-columns: repeat(3, 1fr );
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .iconPng {
+    width: 80px;
+    height: auto;
+    -webkit-filter: drop-shadow(3px 3px 3px rgb(0, 34, 73));
+    filter: drop-shadow(3px 3px 3px rgb(0, 34, 73));
+}
+}
+
+@media only screen and (max-width: 400px ){
+.iconPng {
+    width: 50px;
+    height: auto;
+}
+.icon {
+   width: 90px;
+}
+.clubName {
+    font-size: .8rem;
+}
+}

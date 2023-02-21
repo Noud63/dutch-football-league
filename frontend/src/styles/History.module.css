@@ -1,0 +1,112 @@
+
+.historyWrapper { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1155px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 .8rem;
+  color: white;
+
+} 
+
+.history {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ontstaan, .legendes, .historyInBeeld{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1%;
+  border-bottom: 1px solid white;
+  padding-bottom: 1%;
+}
+
+.historyText, .legendesSpelers {
+  font-size: 1.1rem;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.historyText {
+  margin-bottom: 3%;
+}
+
+.naam {
+  font-weight: bold;
+}
+.gallerij {
+   margin-top: 3%;
+   margin-bottom: 5%;
+   display: grid;
+    width: 100%;
+   grid-template-columns:repeat(4, 1fr);
+   gap: 50px;
+}
+
+.speler {
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 2px rgb(2, 25, 44);
+  /* border: 4px solid rgb(22, 54, 94); */
+}
+
+.spelerImg {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spelerNaam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4%;
+  background-color: rgb(22, 54, 94);
+  color: rgb(255, 255, 255);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.youtubeVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border:30px solid  rgb(22, 54, 94);
+   background-color: rgb(22, 54, 94);
+}
+
+@media only screen and (max-width: 720px) {
+   .gallerij {
+       grid-template-columns:repeat(2, 1fr);
+       grid-template-rows: 2;
+   }
+  .historyText, .legendesSpelers {
+     font-size: 1rem;
+   }
+   .legendesSpelers {
+     margin-bottom: 4%;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .spelerNaam {
+     font-size: .8rem;
+   }
+}

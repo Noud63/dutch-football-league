@@ -1,0 +1,372 @@
+
+.eredivisieLogo {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+  .eredivisieLogo {
+     margin-top: 0rem;
+  }
+}
+
+.borderMarker {
+    width: 100%;
+    height: auto;
+    margin-top: 4%;
+}
+
+.borderMarker2 {
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .borderMarker {
+     display: none;
+  }
+}
+
+.borderMarker3 {
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+}
+
+.schaal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+}
+
+.schaalPic {
+    width: 100%;
+    height: auto;
+}
+
+.history {
+  visibility: visible;
+  width:50%;
+  top:50%;
+  left:10%;
+  transform: translate(-10%, -50%);
+  position: absolute;
+  color: white;
+  line-height: 1.5;
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 0px 0px 4px black, 0px 0px 4px black;
+}
+
+.history2 {
+  display: none;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  max-width: 1140px;
+  color: white;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.historyText {
+  width: 100%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 20px 0 30px 0;
+}
+
+.leeshiermeer {
+  color: rgb(255, 208, 0);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.stukje {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 1150px) {
+  .history {
+     visibility: hidden;
+  }
+  .history2 {
+    display: flex;
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+   .history2 {
+    font-size: .9rem;
+  }
+  .stukje{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+   .history2 {
+    font-size: .9rem;
+  }
+  .stukje{
+    font-size: 1.1rem;
+  }
+}
+
+.ere65 {
+  position: absolute;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eredivisie65 {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .eredivisie65  {
+    width: 70%;
+  height: auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .ere65  {
+     margin-right: 12%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .eredivisie65  {
+    width: 50%;
+  height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ere65  {
+     margin-right: 8%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .eredivisie65  {
+    width: 40%;
+  height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ere65  {
+     margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .eredivisie65  {
+    width: 30%;
+  height: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .ere65  {
+     margin-right:2%;
+  }
+}
+
+.ballInGoal {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.allmatches {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%
+}
+
+.stand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.dezeweek{
+    margin: 4% auto;
+}
+
+.links {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+    color:rgb(227, 238, 255);
+}  
+
+@media only screen and (max-width: 849px) {
+  .links {
+     width: 40%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .links {
+     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .links {
+     width: 65%;
+  }
+}
+
+.derbystar {
+    width: 30%;
+    height: auto;
+    margin-right: 50px;
+}
+
+.ds {
+    width: 100%;
+    height: auto;
+}
+
+.topScores1 {
+   max-width: 1155px;
+   margin: 5% auto;
+   height: auto;
+   margin-bottom: 2%;
+   padding: .6rem;
+  }
+
+ .topScores2 {
+   max-width: 1155px;
+   margin: 5% auto;
+   height: auto;
+   margin-bottom: 7%;
+   padding: .6rem;
+  } 
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: .6em ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 320)));
+   background-color:transparent;
+    box-shadow: 0px 2px 8px rgb(0 33 82);
+    border-radius: .6rem;
+    border: 2px solid rgb(196, 160, 0);
+    margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .top {
+     border-radius: .5rem;
+     box-shadow: 0px 2px 4px rgb(0 33 82);
+      margin-bottom: .8rem;
+  }
+}
+
+.topScorers {
+   position: relative;
+   width: 100%;
+   height: auto;
+   margin: 2% 0 2% 0;
+}
+
+.top3 {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 4px rgb(0, 13, 31);
+  border-radius: .8rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .top3 {
+     border-radius: .5rem;
+  }
+}
+
+.name {
+position: absolute;
+top: 39%;
+left: 5%;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-size: calc(13px + (38 - 13) * ((100vw - 320px) / (1920 - 320)));
+text-shadow: 0px 0px 4px black;
+}
+
+.goals {
+position: absolute;
+top: 39%;
+right: 5%;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-size: calc(13px + (38 - 13) * ((100vw - 320px) / (1920 - 320)));
+text-shadow: 0px 0px 4px black;
+}
+
+.notify {
+  width: 1px;
+}
+
+.ads {
+   width: 1px;
+}
+
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 4, 15, 0.5);
+  box-shadow: inset 0 0 3px rgba(0, 4, 15, 0.5);
+  background-color: rgb(87, 127, 187);
+}
+
+body::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(0, 11, 34);
+  box-shadow: inset 0 0 6px rgb(0, 11, 34);
+  background-color: rgb(52, 96, 163);
+}
