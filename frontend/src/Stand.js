@@ -34,7 +34,7 @@ const Stand = () => {
                   <div className={styles.teamWrapper} key={index}>
                     <div className={styles.leftTeam}>
                       <div className={styles.position}>{position}</div>
-                              <img src={team.crestUrl} alt="logo" className={styles.clubIcon} />
+                              <img src={team.crest} alt="logo" className={styles.clubIcon} />
                       <div key={index} className={styles.team}>{team.name}</div>
                     </div>
 
@@ -66,7 +66,7 @@ const Stand = () => {
                   <div className={styles.teamWrapper} key={index}>
                     <div className={styles.rightTeam}>
                       <div className={styles.position2}>{position}</div>
-                          <img src={team.crestUrl} alt="logo" className={styles.clubIcon} />
+                          <img src={team.crest} alt="logo" className={styles.clubIcon} />
                       <div key={index} className={styles.team}>{team.name}</div>
                     </div>
 

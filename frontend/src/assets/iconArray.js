@@ -1,19 +1,19 @@
 const icons =  [
     'ajax.png', 'psv.png', 'feyenoord.png',
     'twente.png', 'az.png', 'vitesse.png',
-    'utrecht.png', 'groningen.png', 'gaeagles.png',
-    'nec.png', 'heerenveen.png', 'cambuur.png',
+    'utrecht.png', 'almerecity.png', 'gaeagles.png',
+    'nec.png', 'heerenveen.png', 'excelsior.png',
     'heracles.png', 'rkc.png', 'fortuna.png',
-    'pec.png', 'willemII.png', 'sparta.png'
+    'pec.png', 'volendam.png', 'sparta.png'
 ]
 
 const names = [
     'AFC Ajax', 'PSV', 'Feyenoord',
     'FC Twente', 'AZ', 'Vitesse',
-    'FC Utrecht', 'FC Groningen', 'GA Eagles',
-    'NEC', 'FC Heerenveen', 'SC Cambuur',
+    'FC Utrecht', 'Almere City', 'GA Eagles',
+    'NEC', 'FC Heerenveen', 'Excelsior',
     'Heracles', 'RKC', 'Fortuna Sittard',
-    'PEC Zwolle', 'willem II', 'Sparta'
+    'PEC Zwolle', 'Volendam', 'Sparta'
 ]
 
 export { icons, names }
