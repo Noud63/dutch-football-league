@@ -29,7 +29,7 @@ const getFootballData = asyncHandler(async (req, res) => {
         })
     ])
 
-   console.log(response[2].data)
+//    console.log(response[2].data)
 
     const allData = { standings: response[0].data, matches: response[1].data }
     res.status(200).send(allData)

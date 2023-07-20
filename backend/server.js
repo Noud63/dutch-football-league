@@ -15,7 +15,6 @@ app.use('/footballData', footballDataRoute)
 
 // Place after routes
 // Render => Serving the frontend
-
 app.use('/', express.static(path.join(__dirname, '../frontend/', 'build')))
 
 app.get('*', (req, res) => {
