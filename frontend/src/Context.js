@@ -102,8 +102,6 @@ const AllData = ({ children }) => {
 
                     dispatchState({ type: "DATA_REQUEST_SUCCESS", payload: data })
 
-
-                
         } catch (error) {
             dispatchState({ type: "DATA_REQUEST_FAIL" })
             console.error("No data! Try again or wait for just a minute, maybe your request limit has exceeded.")
