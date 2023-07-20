@@ -57,7 +57,7 @@ const Recent = () => {
                         <div className={styles.teams}>
                            <div className={styles.hometeam}>{homeTeam.name}</div>
                            <div className={styles.scores}>
-                              {score.fullTime.homeTeam} : {score.fullTime.awayTeam}
+                              {score.fullTime.home} : {score.fullTime.away}
                            </div>
                            <div className={styles.awayteam}>{awayTeam.name}</div>
                         </div>
@@ -87,7 +87,7 @@ const Recent = () => {
                         <div className={styles.teams}>
                            <div className={styles.hometeam}>{homeTeam.name}</div>
                            <div className={styles.scores}>
-                              {score.fullTime.homeTeam} : {score.fullTime.awayTeam}
+                              {score.fullTime.home} : {score.fullTime.away}
                            </div>
                            <div className={styles.awayteam}>{awayTeam.name}</div>
                         </div>

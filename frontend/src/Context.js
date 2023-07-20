@@ -45,6 +45,8 @@ const AllData = ({ children }) => {
 
                     const matches = response.data.matches.matches
 
+                    // console.log(matches)
+
                     for (let club of matches) {
                         club.homeTeam.name = club.homeTeam.name
                             .replace("Rotterdam", "")
@@ -66,9 +68,10 @@ const AllData = ({ children }) => {
                             .replace("-Leeuwarden", "")
                             .replace("Go Ahead", "GA")
 
-                        if (club.score.fullTime.homeTeam === null || club.score.fullTime.awayTeam === null) {
-                            club.score.fullTime.homeTeam = "?";
-                            club.score.fullTime.awayTeam = "?";
+
+                        if (club.score.fullTime.home === null || club.score.fullTime.away === null) {
+                            club.score.fullTime.home = "?";
+                            club.score.fullTime.away = "?";
                         }
                     }
 
