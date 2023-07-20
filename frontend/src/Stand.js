@@ -33,7 +33,7 @@ const Stand = () => {
                 return (
                   <div className={styles.teamWrapper} key={index}>
                     <div className={styles.leftTeam}>
-                      <div className={styles.position}>{position}</div>
+                      <div className={styles.position}>{index + 1}</div>
                               <img src={team.crest} alt="logo" className={styles.clubIcon} />
                       <div key={index} className={styles.team}>{team.name}</div>
                     </div>
@@ -62,10 +62,11 @@ const Stand = () => {
 
               {state.rightRow.map((place, index) => {
                 const { team, position, playedGames, won, draw, lost, points, goalsAgainst, goalsFor } = place
+                // console.log(position)
                 return (
                   <div className={styles.teamWrapper} key={index}>
                     <div className={styles.rightTeam}>
-                      <div className={styles.position2}>{position}</div>
+                      <div className={styles.position2}>{index + 10}</div>
                           <img src={team.crest} alt="logo" className={styles.clubIcon} />
                       <div key={index} className={styles.team}>{team.name}</div>
                     </div>
