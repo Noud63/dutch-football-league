@@ -1,11 +1,11 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const dotenv = require('dotenv')
-const path = require('path')
-const router = express.Router()
-const footballDataRoute = require('./footballDataRoute')
-const PORT = process.env.REACT_APP_PORT || 5000
+// const dotenv = require('dotenv')
+// const path = require('path')
+// const router = express.Router()
+// const footballDataRoute = require('./footballDataRoute')
+// const PORT = process.env.REACT_APP_PORT || 5000
 
 app.use(cors())
 app.use(express.json())
@@ -13,14 +13,14 @@ dotenv.config()
 
 app.get("/", (req, res) => res.status(200).json({message: "Dutch Football league server"}))
 
-app.use('/footballData', footballDataRoute)
+// app.use('/footballData', footballDataRoute)
 
-// Place after routes
-// Render => Serving the frontend
-app.use('/', express.static(path.join(__dirname, '../frontend/', 'build')))
+// // Place after routes
+// // Render => Serving the frontend
+// app.use('/', express.static(path.join(__dirname, '../frontend/', 'build')))
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
+// });
 
-app.listen(PORT, console.log(`Server running on port ${PORT}`))
+app.listen(5000, console.log(`Server running on port 5000`))
