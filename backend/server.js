@@ -11,6 +11,8 @@ app.use(cors())
 app.use(express.json())
 dotenv.config()
 
+app.get("/", (req, res) => res.status(200).json({message: "Dutch Football league server"}))
+
 app.use('/footballData', footballDataRoute)
 
 // Place after routes
