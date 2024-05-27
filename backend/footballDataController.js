@@ -13,25 +13,25 @@ const getFootballData = asyncHandler(async (req, res) => {
         await axios.get(URL, {
             headers: {
                 "X-Auth-Token": process.env.REACT_APP_API_KEY , 
-                "Access-Control-Allow-Origin": "https://dutch-football-league.vercel.app/"
+                "Access-Control-Allow-Origin": "http://localhost:3000"
             }
         }),
         await axios.get(URL2, {
             headers: {
                 "X-Auth-Token": process.env.REACT_APP_API_KEY,
-                "Access-Control-Allow-Origin": "https://dutch-football-league.vercel.app/"
+                "Access-Control-Allow-Origin": "http://localhost:3000"
             }
         }),
         await axios.get(URL3, {
             headers: {
                 "X-Auth-Token": process.env.REACT_APP_API_KEY,
-                "Access-Control-Allow-Origin": "https://dutch-football-league.vercel.app/"
+                "Access-Control-Allow-Origin": "http://localhost:3000"
             }
         }),
         // await axios.get(URL4, {
         //     headers: {
         //         "X-Auth-Token": process.env.REACT_APP_API_KEY,
-        //         "Access-Control-Allow-Origin": "https://dutch-football-league.vercel.app/"
+        //         "Access-Control-Allow-Origin": "http://localhost:3000"
         //     }
         // })
     ])
