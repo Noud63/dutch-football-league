@@ -28,7 +28,8 @@ const AllData = ({ children }) => {
         try {
             const response = await axios('/footballData')
 
-                    let ranking = response.data.standings.standings[0].table
+                    const ranking = response.data.standings.standings[0].table
+                    const matches = response.data.matches.matches
                     setRanking(ranking)
 
                     for (let club of ranking) {
@@ -42,10 +43,6 @@ const AllData = ({ children }) => {
                             .replace("-Leeuwarden", "")
                             .replace("Go Ahead", "GA")
                     }
-
-                    const matches = response.data.matches.matches
-
-                    // console.log(matches)
 
                     for (let club of matches) {
                         club.homeTeam.name = club.homeTeam.name
@@ -75,7 +72,7 @@ const AllData = ({ children }) => {
                         }
                     }
 
-                    // Create an array of arrays of objects( matches by gameround) [[{} x 9],  x 34]
+                    // Create an array of arrays of objects( matches by gameround, 34 weeks of 9 matches each) [ [{match} x 9], x 34]
                     let byMatchDay = Object.values(
                         matches.reduce((acc, m) => {
                             acc[m.matchday] = acc[m.matchday] || [];

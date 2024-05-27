@@ -30,6 +30,7 @@ const Stand = () => {
 
               {state.leftRow.map((place, index) => {
                 const { team, position, playedGames, won, draw, lost, points, goalsAgainst, goalsFor } = place
+                 // console.log(position)
                 return (
                   <div className={styles.teamWrapper} key={index}>
                     <div className={styles.leftTeam}>
