@@ -101,6 +101,8 @@ const AllData = ({ children }) => {
                     }
 
                     dispatchState({ type: "DATA_REQUEST_SUCCESS", payload: data })
+                    console.log(data);
+
 
         } catch (error) {
             dispatchState({ type: "DATA_REQUEST_FAIL" })
@@ -112,6 +114,7 @@ const AllData = ({ children }) => {
         getData()
     }, [getData])
 
+    
     return <AllApiData.Provider value={{ state, ranking, currentDay, setCurrentDay, setMatchDays, matchDays, matchDay }}>{children}</AllApiData.Provider>
 
 }
