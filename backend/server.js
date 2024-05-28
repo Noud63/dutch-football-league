@@ -11,6 +11,17 @@ app.use(cors())
 app.use(express.json())
 dotenv.config()
 
+app.use(
+  cors({
+    origin: [
+      "https://dutch-football-league-28q5.vercel.app/",
+      "localhost:3000",
+    ],
+    methods: ["GET"],
+    credentials: true,
+  })
+);
+
 app.get("/", (req, res) => res.status(200).json({message: "Dutch Football league server"}))
 
 app.use('/footballData', footballDataRoute)
