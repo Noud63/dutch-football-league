@@ -26,7 +26,7 @@ const AllData = ({ children }) => {
         dispatchState({ type: "DATA_REQUEST" })
 
         try {
-            const response = await axios('/footballData')
+            const response = await axios('http://5000/api/footballData')
 
                     const ranking = response.data.standings.standings[0].table
                     const matches = response.data.matches.matches
