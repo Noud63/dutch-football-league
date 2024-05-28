@@ -18,7 +18,7 @@ app.use(
       "localhost:3000",
     ],
     methods: ["GET"],
-    credentials: true,
+    credentials: false,
   })
 );
 
