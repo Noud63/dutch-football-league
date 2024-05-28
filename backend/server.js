@@ -13,16 +13,15 @@ dotenv.config()
 
 app.use(
   cors({
-    origin: [
-      "https://dutch-football-league-28q5.vercel.app/",
-      "localhost:3000",
-    ],
+    origin: ["https://dutch-football-league.vercel.app/", "localhost:3000"],
     methods: ["GET"],
     credentials: false,
   })
 );
 
-app.get("/", (req, res) => res.status(200).json({message: "Dutch Football league server"}))
+app.get("/", (req, res) => {
+  res.json("Hello");
+}); 
 
 app.use('/footballData', footballDataRoute)
 
