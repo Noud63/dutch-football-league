@@ -14,7 +14,7 @@ dotenv.config()
 app.use(
   cors({
     origin: [
-      "https://dutch-football-league-8k8w-1vo6lhkns-noud63s-projects.vercel.app/",
+      "https://dutch-football-league-8k8w.vercel.app/api",
       "localhost:3000",
     ],
     methods: ["GET"],
@@ -30,11 +30,11 @@ app.use('/api/footballData', footballDataRoute)
 
 // Place after routes
 // Render => Serving the frontend
-app.use('/', express.static(path.join(__dirname, '../frontend/', 'build')))
+// app.use('/', express.static(path.join(__dirname, '../frontend/', 'build')))
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
+// });
 
 app.listen(PORT, console.log(`Server running on port ${PORT}`))
 
