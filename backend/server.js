@@ -22,11 +22,11 @@ app.use(
   })
 );
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.json("Hello");
 }); 
 
-app.use('/footballData', footballDataRoute)
+app.use('/api/footballData', footballDataRoute)
 
 // Place after routes
 // Render => Serving the frontend
