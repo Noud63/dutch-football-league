@@ -14,7 +14,7 @@ dotenv.config()
 app.use(
   cors({
     origin: [
-      "https://dutch-football-league-8k8w.vercel.app/",
+      "https://dutch-football-league-8k8w-1vo6lhkns-noud63s-projects.vercel.app/",
       "localhost:3000",
     ],
     methods: ["GET"],
