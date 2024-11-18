@@ -27,10 +27,10 @@ const AllData = ({ children }) => {
 
         try {
             const response = await axios(
-            "/api/footballData"
+              "https://dutch-football-league-api.vercel.app/api/footballData"
             );
 
-            console.log("Res:", response)
+            console.log(response)
 
                     const ranking = response.data.standings.standings[0].table
                     const matches = response.data.matches.matches
