@@ -28,6 +28,8 @@ const AllData = ({ children }) => {
         try {
             const response = await axios('http://localhost:5000/api/footballData')
 
+            console.log(response)
+
                     const ranking = response.data.standings.standings[0].table
                     const matches = response.data.matches.matches
                     setRanking(ranking)
