@@ -36,8 +36,8 @@ const getFootballData = asyncHandler(async (req, res) => {
         // })
     ])
 
-        const teams = response[2].data.teams.squad
-        console.log("Data:", JSON.parse(JSON.stringify(teams, null, 2)))
+        // const teams = response[2].data.teams.squad
+        // console.log("Data:", JSON.parse(JSON.stringify(teams, null, 2)))
 
     const allData = { standings: response[0].data, matches: response[1].data }
 
