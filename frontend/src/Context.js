@@ -27,7 +27,7 @@ const AllData = ({ children }) => {
 
         try {
             const response = await axios(
-              "https://dutch-football-league-api.vercel.app/api/footballData"
+              "http://localhost:5000/api/footballData"
             );
 
             console.log(response)
