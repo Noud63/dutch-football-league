@@ -30,7 +30,7 @@ const AllData = ({ children }) => {
             "/api/footballData"
             );
 
-            console.log(response)
+            console.log("Res:", response)
 
                     const ranking = response.data.standings.standings[0].table
                     const matches = response.data.matches.matches
