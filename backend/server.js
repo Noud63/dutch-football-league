@@ -7,15 +7,14 @@ const router = express.Router()
 const footballDataRoute = require('./footballDataRoute')
 const PORT = process.env.REACT_APP_PORT || 5000
 
-app.use(cors())
+// app.use(cors())
 app.use(express.json())
 dotenv.config()
 
 app.use(
   cors({
     origin: [
-      "https://dutch-football-league-df6m.vercel.app",
-      "localhost:3000",
+      "https://dutch-football-league-df6m.vercel.app"
     ],
     methods: ["GET", "POST"],
     credentials: true,
